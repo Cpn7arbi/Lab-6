@@ -1,0 +1,30 @@
+/* Center the container vertically */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* 100% of the viewport height */
+    margin: 0;
+    flex-direction: column;  /* Stack elements vertically */
+}
+
+
+/* Style for larger buttons with limited width */
+button {
+    font-size: 1.5rem;       /* Increase font size for larger text */
+    padding: 15px 30px;      /* Increase padding for a larger button */
+    width: 100%;             /* Button takes full width of container */
+    max-width: 200px;        /* Limit the max width of the button */
+    margin: 10px 0;          /* Add space between buttons */
+    cursor: pointer;         /* Add pointer cursor on hover */
+}
+
+/* Style the input and comments section */
+textarea, #commentsList {
+    width: 100%;             /* Full width of the container */
+    max-width: 100%;         /* Prevent stretching */
+    margin: 10px 0;          /* Add space between elements */
+    padding: 10px;           /* Add padding for better appearance */
+    box-sizing: border-box;  /* Include padding in the width */
+    resize: vertical;        /* Allow vertical resizing only */
+}
